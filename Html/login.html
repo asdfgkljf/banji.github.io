@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>欢迎登陆班级管理系统</title>
+
+    <link rel="stylesheet" href="../css/login.css">
+    <script src="../js/jquery-2.1.1.min.js"></script>
+    <script src="layer/layer.js"></script>
+    <style>
+        .form-group.focus .form-label,
+        .form-group.filled .form-label {
+            top: 9px;
+            font-size: 20px;
+            color: #eeeae6;
+        }
+        
+        .layui-layer-molv .layui-layer-title {
+            background: coral;
+            color: #fff;
+            border: none;
+        }
+        
+        .layui-layer-title {
+            padding: 0 80px 0 20px;
+            height: 40px;
+            line-height: 42px;
+            border-bottom: 1px solid #eee;
+            font-size: 17px;
+            color: #333;
+            overflow: hidden;
+            background-color: #F8F8F8;
+            border-radius: 2px 2px 0 0;
+        }
+        
+        .layui-layer-molv .layui-layer-btn a {
+            background: coral;
+            border-color: coral;
+        }
+        
+        .layui-layer-dialog .layui-layer-content {
+            position: relative;
+            padding: 20px;
+            line-height: 24px;
+            word-break: break-all;
+            overflow: hidden;
+            font-size: 25px;
+            text-align: center;
+            overflow-x: hidden;
+            overflow-y: auto;
+            color: coral;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="landscape">
+        <a>联系我们</a>
+        <a href="register.html">找回密码</a>
+        <div class="panel">
+
+            <h1>班级管理系统</h1>
+            <div class="formset">
+                <div class="form-group">
+                    <lable class="form-label">用户名</lable>
+                    <input class="form-control" id="name" type="text" value="201608240809" />
+                </div>
+                <div class="form-group">
+                    <lable class="form-label">密码</lable>
+                    <input class="form-control" id="pass" type="password" value="kq123456" />
+                </div>
+                <button class="btn" onclick="login()">登录</button>
+            </div>
+        </div>
+    </div>
+
+    <canvas id="canvas"></canvas>
+
+    <script src='../js/jquery.min.js'></script>
+
+    <script src="../js/login.js"></script>
+</body>
+<script src="https://cdn.bootcss.com/jquery/2.1.4/jquery.min.js"></script>
+<script>
+    function login() {
+        // 点击登陆会执行这里的方法
+        // 获取用户的输入并保存到变量里面
+        var name = $("#name").val();
+
+        var pass = $("#pass").val();
+
+        console.log(name, pass)
+
+
+        // 写了个拼音方便区分
+        // {} 构建了一个 对象
+        $.get("http://127.0.0.1/login", {
+            sno: name,
+            pass: pass
+        }, function(resp) {
+            layer.alert(resp.msg, {
+                skin: 'layui-layer-molv' //样式类名
+                    ,
+                closeBtn: 0,
+                anim: 4
+            }, function() {
+                if (resp.msg == "登陆成功") {
+
+                    console.log("success")
+                    window.open("index.html", "_self");
+
+                } else {
+                    window.location.reload();
+                }
+            });
+
+
+        })
+    }
+</script>
+
+</html>

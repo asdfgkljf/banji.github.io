@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/common.css">
+    <link href="../css/scroll.css" type="text/css" rel="stylesheet" />
+    <link rel="stylesheet" href="../css/layui.css">
+    <!-- <script src="../js/index.js"></script> -->
+    <title>主页</title>
+</head>
+
+<body>
+    <div id="particles-js">
+        <div class="all1">
+            <!-- 团标 -->
+            <div class="Emblem">
+                <img src="../images/xh.jpg" alt="" srcset="">
+            </div>
+            <!-- 导航栏 -->
+            <ul id="folding-menu">
+                <li><a href="index.html" id="index"><i></i>&nbsp;主页</a></li>
+                <li><a href="Personal honor.html"><i></i>&nbsp;个人风采</a></li>
+                <li><a href="Class honor.html"><i></i>&nbsp;班级风采</a></li>
+                <li><a href="Price apply.html"><i></i>&nbsp;评优奖申请</a></li>
+                <li><a href="Leave.html"><i></i>&nbsp;请假申请</a></li>
+                <li><a href="Homework.html"><i></i>&nbsp;作业提交</a></li>
+                <li><a href="Lesson.html"><i></i>&nbsp;课程信息</a></li>
+                <li><a href="Set.html"><i></i>&nbsp;设置</a></li>
+            </ul>
+        </div>
+
+        <!-- 轮播图、消息栏、班规、通知 -->
+        <div class="contain">
+            <!-- 轮播图 -->
+            <div class="photo" id="photo">
+                <div class="layui-carousel" id="test1" lay-filter="test1">
+                    <div carousel-item="" id="lb-img">
+                        <div><img src="../images/bg1.jpg" alt=""></div>
+                        <div><img src="../images/bg2.jpg" alt=""></div>
+                        <div><img src="../images/bg3.jpg" alt=""></div>
+                        <div><img src="../images/bg4.jpg" alt=""></div>
+                        <div><img src="../images/bg5.jpg" alt=""></div>
+                    </div>
+                </div>
+
+
+
+                <a href="javascript:;" class="arrow" id="prev">&lt;</a>
+                <a href="javascript:;" class="arrow" id="next">&gt;</a>
+            </div>
+
+            <!-- 班规 -->
+            <div class="classrule">
+                <p><a title="班规" id="rules"><i></i>&nbsp;班&nbsp;规</a><a class=" more" href="morerule.html" target="_blank">更多&raquo;</a></p>
+                <ul id="rulesctn">
+
+                </ul>
+            </div>
+
+            <!-- 通知 -->
+            <div class="massage">
+                <p><a title="通知" id="notice"><i></i>&nbsp;通&nbsp;知</a><a class="more" href="morenotice.html" target="view_window">
+                        更多&raquo;
+                </a>
+                </p>
+                <ul id="newsctn"></ul>
+
+            </div>
+            <!-- 心声 -->
+            <div class="scroll">
+                <div id="thinking" class=" mb40 fl p10">
+                    <div id="thingk_title" class="bg_all mb20">
+                        <a href="#" title="" class="fr gray noline " target="_blank"><i></i>班级心声</a>
+                    </div>
+                    <ul id="list_thinking">
+                        <li>
+                            <a href="" target="_blank"><img width="24" height="24" alt="beata娟" id="face_4920841" class="pic_border pf fl lazy_img" src="../images/4920841.jpg" /></a> <span class="txt_thinking fr digest"> 【写给我最美好的年华】这么戳人泪点的征文题目啊，这么伤感怀旧的BGM..."放心去飞，勇敢地去追……说好了这一次不掉眼泪"... <br/>
+                          <a href="#" title="阅读全文" target="_blank" class="gray normal">阅读全文&raquo;</a></span>
+                            <div class="txt_from"> <span><a href="#" target="_blank"></a> </span> 来自 <a href="#" class="noline" target="_blank">2016级8班</a> </div>
+                        </li>
+                        <li>
+                            <a href="#" target="view_window"><img width="24" height="24" alt="jane20110706" id="face_9221006" class="pic_border pf fl lazy_img" src="../images/9221006.jpg" /></a> <span class="txt_thinking fr digest"> 不敢相信，查了两遍后，终于确信，我是过了四级了。不容易，考了几次，终于过了...<br/>
+                          <a href="/feedback/2111" title="阅读全文" target="_blank" class="gray normal">阅读全文&raquo;</a></span>
+                            <div class="txt_from"> <span><a href="#" target="_blank"></a> </span> 来自 <a href="#" class="noline" target="_blank">2016级8班</a> </div>
+                        </li>
+                        <li>
+                            <a href="#" target="_blank"><img width="24" height="24" alt="浅jessica" id="face_3479036" class="pic_border pf fl lazy_img" src="../images/3479036.jpg" /></a> <span class="txt_thinking fr digest"> 学生第八支部团日活动圆满结束！感谢大家为这次活动做出的积极奉献，真的... <br/>
+                          <a href="#" title="阅读全文" target="_blank" class="gray normal">阅读全文&raquo;</a></span>
+                            <div class="txt_from"> <span><a href="#" target="_blank"></a> </span> 来自 <a href="#" class="noline" target="_blank">2016级8班</a> </div>
+                        </li>
+                        <li>
+                            <a href="#" target="_blank"><img width="24" height="24" alt="我才是玛奇朵" id="face_10140568" class="pic_border pf fl lazy_img" src="../images/10140568.jpg" /></a> <span class="txt_thinking fr digest">喜报！！！本次计算机设计大赛院赛，我们班有5个项目获得优异成绩，祝贺！！...<br/>
+                          <a href="/feedback/2113" title="阅读全文" target="_blank" class="gray normal">阅读全文&raquo;</a></span>
+                            <div class="txt_from"> <span><a href="#" target="_blank"></a> </span> 来自 <a href="#" class="noline" target="_blank">2016级8班</a> </div>
+                        </li>
+                        <li>
+                            <a href="" target="_blank"><img width="24" height="24" alt="beata娟" id="face_4920841" class="pic_border pf fl lazy_img" src="../images/4920841.jpg" /></a> <span class="txt_thinking fr digest">明天寝室卫生大检查,若有不合格的寝室给我蹲墙角面壁思过！...<br/>
+                              <a href="#" title="阅读全文" target="_blank" class="gray normal">阅读全文&raquo;</a></span>
+                            <div class="txt_from"> <span><a href="#" target="_blank"></a> </span> 来自 <a href="#" class="noline" target="_blank">2016级8班</a> </div>
+                        </li>
+                        <li>
+                            <a href="#" target="_blank"><img width="24" height="24" alt="jane20110706" id="face_9221006" class="pic_border pf fl lazy_img" src="../images/9221006.jpg" /></a> <span class="txt_thinking fr digest">学校运动会，请同学们积极为学院运动员们呐喊助威哟~... <br/>
+                              <a href="/feedback/2111" title="阅读全文" target="_blank" class="gray normal">阅读全文&raquo;</a></span>
+                            <div class="txt_from"> <span><a href="#" target="_blank"></a> </span> 来自 <a href="#" class="noline" target="_blank">2016级8班</a> </div>
+                        </li>
+                        <li>
+                            <a href="#" target="_blank"><img width="24" height="24" alt="浅jessica" id="face_3479036" class="pic_border pf fl lazy_img" src="../images/3479036.jpg" /></a> <span class="txt_thinking fr digest">这次的上机作业好难啊~好多都不会写，可怜兮兮...<br/>
+                              <a href="#" title="阅读全文" target="_blank" class="gray normal">阅读全文&raquo;</a></span>
+                            <div class="txt_from"> <span><a href="#" target="_blank"></a> </span> 来自 <a href="#" class="noline" target="_blank">2016级8班</a> </div>
+                        </li>
+                        <li>
+                            <a href="#" target="_blank"><img width="24" height="24" alt="我才是玛奇朵" id="face_10140568" class="pic_border pf fl lazy_img" src="../images/10140568.jpg" /></a> <span class="txt_thinking fr digest">计算机二级又没过，难过，求抱抱求安慰...<br/>
+                              <a href="/feedback/2113" title="阅读全文" target="_blank" class="gray normal">阅读全文&raquo;</a></span>
+                            <div class="txt_from"> <span><a href="#" target="_blank"></a> </span> 来自 <a href="#" class="noline" target="_blank">2016级8班</a> </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- footer -->
+        <div id="footer">
+
+            <div class="bottominfo">
+                版权所有：河南理工大学 The wait 团队
+                </br>
+                Copyright © 2024 3-2024 9 / 5000 Henan Polytechnic University
+            </div>
+        </div>
+    </div>
+
+</body>
+
+
+
+<script src="https://cdn.bootcss.com/jquery/2.1.4/jquery.min.js"></script>
+<script src="../layui/layui.js" charset="utf-8"></script>
+<script>
+    function init() {
+        $.post(
+            "http://127.0.0.1/newslist", {
+
+            },
+            function(resp) {
+                console.log(resp);
+                if (resp.code == 200) {
+                    var html = "<ul>";
+                    for (var i = 0; i < resp.data.length; i++) {
+                        var t = "";
+                        t +=
+                            "<li title=" + resp.data[i].title + "><a><i></i>&nbsp;" +
+                            resp.data[i].content +
+                            '</a><span>' + resp.data[i].data.slice(5, 10) + '</span></li>';
+                        html += t;
+                    }
+                    html += " </ul>";
+                    document.getElementById("newsctn").innerHTML = html;
+                } else {
+                    alert(resp.msg);
+                }
+            }
+        );
+        layui.use(['carousel', 'form'], function() {
+            var carousel = layui.carousel,
+                form = layui.form;
+
+            //图片轮播
+            carousel.render({
+                elem: '#test1',
+                width: '780px',
+                height: '250px',
+                interval: 5000
+            });
+
+            //事件
+            carousel.on('change(test4)', function(res) {
+                console.log(res)
+            });
+
+            var $ = layui.$,
+                active = {
+                    set: function(othis) {
+                        var THIS = 'layui-bg-normal',
+                            key = othis.data('key'),
+                            options = {};
+
+                        othis.css('background-color', '#5FB878').siblings().removeAttr('style');
+                        options[key] = othis.data('value');
+                        ins3.reload(options);
+                    }
+                };
+
+            //监听开关
+            form.on('switch(autoplay)', function() {
+                ins3.reload({
+                    autoplay: this.checked
+                });
+            });
+            setInterval(function() {
+                $('#thinking ul li:last').hide().insertBefore($("#thinking ul li:first")).slideDown(1000);
+            }, 3000);
+
+
+            $('.demoSet').on('keyup', function() {
+                var value = this.value,
+                    options = {};
+                if (!/^\d+$/.test(value)) return;
+
+                options[this.name] = value;
+                ins3.reload(options);
+            });
+
+        });
+
+        $.post(
+            "http://127.0.0.1/ruleslist", {
+
+            },
+            function(resp) {
+                console.log(resp);
+                if (resp.code == 200) {
+                    var html = "<ul>";
+                    for (var i = 0; i < resp.data.length; i++) {
+                        var t = "";
+                        t +=
+                            "<li><a><i></i>&nbsp;" +
+                            // (i + 1) + "." +
+                            resp.data[i].content +
+                            '</a><span>' + resp.data[i].data.slice(5, 10) + '</span></li>';
+                        html += t;
+                    }
+                    html += " </ul>";
+                    document.getElementById("rulesctn").innerHTML = html;
+                } else {
+                    alert(resp.msg);
+                }
+            }
+        );
+    }
+    init();
+</script>
+
+</html>

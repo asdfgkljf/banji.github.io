@@ -1,0 +1,83 @@
+body{
+	font-family: Arial,sans-serif;
+	color: rgb(246, 232, 232);
+	font-size: 12px;
+	margin: 0px;
+	background: url(../images/bg3.jpg) repeat-x #FFFFFF;
+	background-size: 100% 1100px;
+	padding: 0px;
+}
+/**************************main*************************/
+#main {
+	height:700px;
+	padding:5px 15px;
+	position:relative;	
+}
+.registerbox {
+    position: absolute;
+    margin: 5% 50%;
+    left: -250px;
+    width:500px;
+	height:600px;
+	background-color: transparent;
+	border-radius: 20%;
+	background: rgba(92, 144, 241, 0.8);
+	box-shadow: 10px 10px 15px rgba(127, 160, 221, 0.8);
+	/* background: url(../images/regbg.png) no-repeat; */
+}
+.registerInfo {
+	font-size:25px;
+	font-family:楷体;
+	font-weight:bold;
+    padding-top:100px;
+	padding-left:50px;
+}
+.regFormIpt {
+    height:42px;
+	width:240px;
+	border:none;
+	padding-left:20px;
+	background-image:url(../images/bg.png);
+	background-position:0 -352px;
+	box-sizing: border-box;
+}
+.hint{
+	font-size:10px;
+	font-family:宋体;
+	font-weight:normal;
+	color:rgb(250, 246, 245);
+	padding-left:144px;
+}
+#passInputLine,#ensurepassInputLine,#emailInputLine,#stuNumInputLine{
+	padding-top:10px;
+}
+#idInputLine{
+    padding-left:50px;
+}
+#stuNumInputLine,#passInputLine{
+    padding-left:24px;
+}
+.btn {
+	width: 110px;
+	height: 38px;
+	text-align: center;
+	border: 0;
+	cursor: pointer;
+	padding: 0;
+	font-weight: 700;
+	font-size: 20px;
+	display: inline-block;
+	line-height: 38px;
+	background-color: transparent;
+}
+
+#regButton {
+    padding-top:20px;
+	padding-left:140px;
+}
+#regBtn {
+    font-family:楷体;
+	color: white;
+	background: #FE5F01;
+	box-shadow: 0 4px 5px rgba(255,102,0,1);
+}

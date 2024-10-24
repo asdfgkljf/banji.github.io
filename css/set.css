@@ -1,0 +1,125 @@
+/* .lk{
+    position: absolute;
+    width: 82%;
+    left: 18%;
+    height: 100%;
+    top: 0;
+} */
+
+body {
+    margin: 0;
+}
+
+
+/* 权限选择 */
+
+.quanxian {
+    position: absolute;
+    width: 400px;
+    height: 40px;
+    left: 30%;
+    top: 10%;
+    font-size: 18px;
+}
+
+.quanxian a {
+    display: block;
+    position: absolute;
+    top: 0;
+    height: 100%;
+    line-height: 40px;
+    text-align: center;
+}
+
+.quanxian a:nth-of-type(1) {
+    border: 1px solid rgb(180, 187, 206);
+    width: 40%;
+    left: 0;
+}
+
+.quanxian a:nth-of-type(2) {
+    width: 50%;
+    left: 40%;
+}
+
+.quanxian a select,
+.quanxian a select option {
+    position: absolute;
+    top: 0;
+    left: 3px;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    text-align: center;
+    border: 1px solid rgb(180, 187, 206);
+    font-size: 20px;
+}
+
+
+/* 权限设置 */
+
+.set {
+    position: absolute;
+    width: 80%;
+    height: 70%;
+    top: 17%;
+    left: 16%;
+    border: 1px solid black;
+}
+
+.set i {
+    font-family: "icomoon";
+    font-style: normal;
+    color: #1f94e7;
+}
+
+.set i::after {
+    content: " "
+}
+
+.set div {
+    position: absolute;
+    width: 33%;
+    height: 48%;
+    top: 1%;
+    left: 1%;
+}
+
+.set div:nth-of-type(4),
+.set div:nth-of-type(5) {
+    top: 50%;
+}
+
+.set div:nth-of-type(2),
+.set div:nth-of-type(5) {
+    left: 34%;
+}
+
+.set div:nth-of-type(3) {
+    left: 67%;
+}
+
+.set div ul li {
+    font-size: 18px;
+    line-height: 30px;
+    padding-left: 20px;
+    box-sizing: border-box;
+    list-style: none;
+}
+
+.set div ul li:nth-of-type(1) {
+    list-style: none;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 50px;
+    padding-left: 20%;
+}
+
+.set div ul li:hover {
+    cursor: pointer;
+    color: darkgray;
+}
+
+.set div ul li:nth-of-type(1):hover {
+    color: black;
+}

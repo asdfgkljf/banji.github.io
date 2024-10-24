@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../css/layui.css" media="all">
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/Price apply.css">
+
+    <title>评奖评优申请</title>
+</head>
+<script src="https://cdn.bootcss.com/jquery/2.1.4/jquery.min.js"></script>
+
+<body>
+    <div class="all">
+        <div class="all1">
+            <!-- 团标 -->
+            <div class="Emblem">
+                <img src="../images/xh.jpg" alt="" srcset="">
+            </div>
+            <!-- 导航栏 -->
+            <ul id="folding-menu">
+                <li><a href="index.html" id="index"><i></i>&nbsp;主页</a></li>
+                <li><a href="Personal honor.html"><i></i>&nbsp;个人风采</a></li>
+                <li><a href="Class honor.html"><i></i>&nbsp;班级风采</a></li>
+                <li><a href="Price apply.html"><i></i>&nbsp;评优奖申请</a></li>
+                <li><a href="Leave.html"><i></i>&nbsp;请假申请</a></li>
+                <li><a href="Homework.html"><i></i>&nbsp;作业提交</a></li>
+                <li><a href="Lesson.html"><i></i>&nbsp;课程信息</a></li>
+                <li><a href="Set.html"><i></i>&nbsp;设置</a></li>
+            </ul>
+        </div>
+        <!-- header -->
+        <div class="header">
+            <img src="../images/10140568.jpg"></img>
+            <a id="honor" href="my honor.html"><i></i>我的风采</a>
+            <a id="zl" href="Modify.html"><i></i>修改资料</a>
+            <a id="back" href="login.html"><i></i>退出登录</a>
+        </div>
+
+        <div class="content">
+            <div class="layui-inline">
+                <div class="layui-input-inline" style="width:300px;height:30px;">
+                    <select name="modules" lay-verify="required" lay-search="" style="width:200px;height:30px;">
+                        <option value="">请选择申请类型</option>
+                        <option value="1">一等奖学金</option>
+                        <option value="2">助学金</option>
+                        <option value="3">先进个人</option>
+                    </select>
+                    <button id="ctn" style="width:60px;height:30px;">确认</button>
+                </div>
+            </div>
+            <div class="apply">
+                <p class="type1" id="t1">
+                    <a class="massion1">姓名</a>
+                    <a class="massion2"><input id="sname" type="text"></a>
+                    <a class="massion1">性别</a>
+                    <!-- <a class="massion2">
+                        <select name="modules" lay-verify="required" lay-search="">
+                            <option value=""></option>
+                            <option value="1">男</option>
+                            <option value="2">女</option>
+                        </select>
+                    </a> -->
+                    <a class="massion2"><input id="sex" type="text"></a>
+                    <a class="massion1">学号</a>
+                    <a class="massion2"><input id="sno" type="text"></a>
+                </p>
+                <p class="type1" id="t2">
+                    <a class="massion1">
+                        <select name="modules" lay-verify="required" lay-search="">
+                            <option value="">年级</option>
+                            <option value="1">2016级</option>
+                            <option value="2">2017级</option>
+                            <option value="3">2018级</option>
+                            <option value="4">2019级</option>
+                        </select>
+                    </a>
+                    <a class="massion2">
+                        <select name="modules" lay-verify="required" lay-search="">
+                            <option value="">班级</option>
+                            <option value="1">1班</option>
+                            <option value="2">2班</option>
+                            <option value="3">3班</option>
+                            <option value="4">4班</option>
+                            <option value="5">5班</option>
+                            <option value="6">6班</option>
+                            <option value="7">7班</option>
+                        </select>
+                    </a>
+                    <a class="massion1">联系电话</a>
+                    <a class="massion2"><input id="phone" type="text"></a>
+                    <a class="massion1">任何职位</a>
+                    <a class="massion2">
+                        <select name="modules" lay-verify="required" lay-search="" id="position">
+                            <option value="">无</option>
+                            <option value="1">班长</option>
+                            <option value="2">劳动委员</option>
+                            <option value="3">团支书</option>
+                            <option value="4">学习委员</option>
+                            <option value="5">文娱委员</option>
+                            <option value="6">体育委员</option>
+                            <option value="7">宿管委员</option>
+                        </select>
+                    </a>
+                </p>
+                <p class="type1" id="t3">
+                    <a class="massion1">年级人数</a>
+                    <a class="massion2"><input id="infocunt" type="text"></a>
+                    <a class="massion1">成绩排名</a>
+                    <a class="massion2"><input id="score_asc" type="text"></a>
+                    <a class="massion1">有无补考</a>
+                    <a class="massion2">
+                        <select id="bukao" name="modules" lay-verify="required" lay-search="">
+                            <option value=""></option>
+                            <option value="1">有</option>
+                            <option value="2">无</option>
+                        </select>
+                    </a>
+                </p>
+                <p class="type2">
+                    <a class="massion21">申请理由(200字以上)</a>
+                    <a class="massion22"><textarea id="content" type="text"></textarea></a>
+                </p>
+                <p class="type3">
+                    <a class="massion31">班级评议小组意见</a>
+                    <a class="massion32"><textarea type="text"></textarea></a>
+                </p>
+                <p class="type3" id="type4">
+                    <a class="massion31">学院评审小组意见</a>
+                    <a class="massion32"><textarea type="text"></textarea></a>
+                </p>
+            </div>
+            <button onclick="getSname()" class="layui-btn layui-btn-normal" style="position:absolute;font-size: 14px;height:4%;left: 45%;">提交保存</button>
+        </div>
+        <!-- footer -->
+        <div id="footer">
+            <div class="bottominfo">
+                版权所有：河南理工大学 The wait 团队
+                </br>
+                Copyright © 2024 3-2024 9 / 5000 Henan Polytechnic University
+            </div>
+        </div>
+    </div>
+
+</body>
+<!-- <script>
+    layui.use(['form', 'layedit', 'laydate'], function() {
+        var form = layui.form,
+            layer = layui.layer,
+            layedit = layui.layedit,
+            laydate = layui.laydate;
+
+        //日期
+        laydate.render({
+            elem: '#date'
+        });
+        laydate.render({
+            elem: '#date1'
+        });
+
+        //创建一个编辑器
+        var editIndex = layedit.build('LAY_demo_editor');
+
+        //自定义验证规则
+        form.verify({
+            title: function(value) {
+                if (value.length < 5) {
+                    return '标题至少得5个字符啊';
+                }
+            },
+            pass: [/(.+){6,12}$/, '密码必须6到12位'],
+            content: function(value) {
+                layedit.sync(editIndex);
+            }
+        });
+
+        //监听指定开关
+        form.on('switch(switchTest)', function(data) {
+            layer.msg('开关checked：' + (this.checked ? 'true' : 'false'), {
+                offset: '6px'
+            });
+            layer.tips('温馨提示：请注意开关状态的文字可以随意定义，而不仅仅是ON|OFF', data.othis)
+        });
+
+        //监听提交
+        form.on('submit(demo1)', function(data) {
+            layer.alert(JSON.stringify(data.field), {
+                title: '最终的提交信息'
+            })
+            return false;
+        });
+
+
+
+
+    });
+</script> -->
+<script src="../layui/layui.js" charset="utf-8"></script>
+<script src="../js/sapply.js"></script>
+
+</html>

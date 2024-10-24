@@ -1,0 +1,186 @@
+* {
+	margin: 0px;
+	text-decoration: none;
+}
+
+.dh {
+	position: absolute;
+	width: 100%;
+	height: 8%;
+	background: lightgray;
+	margin: 0;
+}
+
+.dh li {
+	list-style: none;
+	display: block;
+	width: 20%;
+	padding-left: 3%;
+	float: left;
+	line-height: 80px;
+	font-size: 30px;
+	box-sizing: border-box;
+	color: black;
+}
+
+.dh li:nth-of-type(1) {
+	font-size: 30px;
+}
+
+.dh li:nth-of-type(5) {
+	font-size: 25px;
+}
+
+.dh li:hover {
+	cursor: pointer;
+	color: lightslategray;
+}
+.dh li:nth-of-type(1){
+	color: black;
+}
+/* .dh li:nth-of-type(5){
+	color: black;
+} */
+
+#container {
+	width: 800px;
+	height: 650px;
+	position: absolute;
+	border: 3px solid #333;
+	overflow: hidden;
+	margin: 8% 50%;
+	left: -400px;
+}
+/* #container a:nth-of-type(1){
+	display: block;
+	position: absolute;
+	margin-top: 0;
+	width: 100%;
+	height: 45px;
+	font-size: 30px;
+	text-align: center;
+	line-height: 50px;
+	color: black;
+} */
+#list img{
+	margin: 50px auto;
+	width: 800px;
+	height: 600px;
+	float: left;
+}
+#list {
+	width: 5600px;
+	height: 600px;
+	position: absolute;
+	z-index: 1;
+}
+
+
+#buttons {
+	position: absolute;
+	height: 10px;
+	width: 100px;
+	z-index: 2;
+	bottom: 20px;
+	left: 350px;
+}
+
+#buttons span {
+	cursor: pointer;
+	/*假超链接样式*/
+	float: left;
+	border: 1px solid #fff;
+	width: 10px;
+	height: 10px;
+	border-radius: 10px;
+	background: #333;
+	margin-right: 5px;
+}
+
+#buttons .on {
+	background: orangered;
+}
+
+.arrow {
+	cursor: pointer;
+	display: none;
+	line-height: 39px;
+	text-align: center;
+	font-size: 36px;
+	font-weight: bold;
+	width: 40px;
+	height: 40px;
+	position: absolute;
+	z-index: 2;
+	top: 380px;
+	background-color: RGBA(0, 0, 0, .3);
+	color: #fff;
+}
+
+.arrow:hover {
+	background-color: RGBA(0, 0, 0, .7);
+}
+
+#container:hover .arrow {
+	display: block;
+}
+
+#prev {
+	left: 20px;
+}
+
+#next {
+	right: 20px;
+}
+#bti1, #bti2{
+	width: 400px;
+	height: 650px;
+	position: absolute;
+	border: 2px solid black;
+	margin-top: 8%;
+	background: gainsboro;
+}
+#bti1{
+	left: 100px;
+}
+#bti2{
+	right: 100px;
+}
+.bti li{
+	list-style: none;
+  	border-bottom: 1px dashed #0E90D2;
+  	width: 100%;
+  	height: 50px;
+}
+.bti li:nth-of-type(1) a{
+	width: 100%;
+	text-align: center;
+	font-weight: bolder;
+	box-sizing: border-box;
+}
+.bti li:nth-of-type(1){
+	border-bottom: 1px solid #0E90D2;
+}
+.bti li a:hover{
+	cursor: pointer;
+	background: lavender;
+}
+.bti li a{
+	display: block;
+	padding-left: 2%;
+	width: 83%;
+	line-height: 50px;
+	font-size: 20px;
+	float: left;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    color: black;
+    text-decoration: none;
+}
+.time{
+	width: 15%;
+	float: right;
+	line-height: 50px;
+	font-size: 18px;
+}

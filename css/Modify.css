@@ -1,0 +1,133 @@
+body{
+    padding: 0;
+    margin: 0;
+    /* background: url(../images/bodybg.jpg) repeat-x #FFFFFF; */
+	/* position:relative;	 */
+}
+.all{
+    position: absolute;
+    width: 1300px;
+    left: 0;
+    height: 700px;
+    border: 1px solid skyblue;
+}
+
+
+/* 修改自己的资料 */
+.change{
+    position: absolute;
+    width: 20%;
+    height:35px;
+    top: 65px;
+    left: 45%;
+    /* background: #000; */
+    text-align: center;
+    font-size: 30px;
+    line-height: 35px;
+    font-weight: bold;
+    font-family: "楷体";
+    box-sizing: border-box;
+}
+.chy{
+    background: rgb(234, 234, 243);
+    position: absolute;
+    top: 105px;
+    width: 40%;
+    height: 75%;
+    left: 32%;
+    border: 1px solid lavender;
+    box-shadow: 7px 7px 13px lightgray;
+    border-radius: 10%;
+}
+.txiang{
+    position: absolute;
+    width: 100%;
+    height: 40%;
+    font-size: 22px;
+    font-family: "楷体";
+    z-index: 20;
+
+}
+#img{
+    position: absolute;
+    width: 38%;
+    height: 100%;
+    float: left;
+    border-radius: 50%;
+}
+#img1:hover{
+    animation: run 2s linear infinite;
+}
+@keyframes run{
+    0%{transform: scale(1.5)}
+    50%{transform: scale(2)}
+    100%{transform: scale(1.5)}
+}
+.txiang a input,.zliao a input{
+    font-size: 22px;
+    padding-left: 40px;
+    border-radius: 15%;
+    box-shadow: 5px 5px 10px lavenderblush;
+}
+.name, .sex, .age{
+    position: absolute;
+    width: 56%;
+    height: 25%;
+    left: 40%;
+    top: 5%;
+    float: left;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+.sex{
+    top: 36%;
+}
+.age{
+    top: 67%;
+}
+.chy input{
+    font-size: 22px;
+}
+.txiang a:hover,.zliao a:hover,.txiang a input:hover,.zliao a input:hover{
+    cursor: pointer;
+}
+.txiang a input,.zliao a input{
+    font-size: 18px;
+    padding-left: 50px;
+    border-radius: 15%;
+    box-shadow: 5px 5px 10px lavenderblush;
+}
+.zliao{
+    position: absolute;
+    width: 100%;
+    height: 55%;
+    top: 40%;
+    left: 5%;
+    font-size: 24px;
+    font-family: "楷体";
+    z-index: 10;
+}
+.zliao a{
+    width: 100%;
+    height: 16%;
+    float: left;
+    padding-top: 2%;
+    padding-left:3%;
+}
+.chy a input{
+    border: none;
+    height: 90%;
+    width: 60%;
+}
+/* 确认按钮 */
+.btn{
+    position: absolute;
+    width: 150px;
+    height: 5%;
+    bottom: 0;
+    left: 40%;
+    font-size: 16px;
+    color: rgb(221, 221, 236);
+    background: rgb(28, 118, 235);
+}
+/* footer */

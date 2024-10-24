@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>注册</title>
+    <link href="../css/register.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="../css/common.css">
+    <script src="../js/register.js"></script>
+</head>
+<body>
+    <div id="main">
+        <div class="registerbox">
+            <div class="registerInfo">
+                <form action="" method="post">
+                    <div id="idInputLine">
+                        <label class="accAndPass">账号:</label>
+                        <input class="regFormIpt" style="font-size:20px" title="请输入账号" type="text" size="5" name="" onmouseover="this.value=this.value.replace(/[^0-9a-zA-Z_]/g,'')" onkeyup="this.value=this.value.replace(/[^0-9a-zA-Z_]/g,'')" onafterpaste="this.value=code.value.replace(/[^0-9.a-z.A-Z._]/g,'')">
+                        <span id="accCheck">√</span>
+                    </div>
+                    <div class="hint">
+                        <span>账号为您的学号</span>
+                    </div>
+                    <div id="passInputLine">
+                        <label class="accAndPass">新密码:</label>
+                        <input id="password" class="regFormIpt" style="font-size:35px" title="请输入密码" type="password" onchange="CheckPass(this.value)" size="10" name="">
+                        <span id="passCheck"></span>
+                    </div>
+                    <div class="hint">
+                        <span>密码由6~18位字符组成</span>
+                    </div>
+                    <div id="ensurepassInputLine">
+                        <label class="accAndPass">确认密码:</label>
+                        <input class="regFormIpt" style="font-size:35px" title="请确认密码" type="password" onchange="CheckEnsurePass(this.value)" size="10" name="">
+                        <span id="ensurePassCheck"></span>
+                    </div>
+                    <div class="hint">
+                        <span>请再次输入密码</span>
+                    </div>
+                    <div id="emailInputLine">
+                        <label class="accAndPass">电子邮箱:</label>
+                        <input class="regFormIpt" style="font-size:20px" title="请输入邮箱" type="text" onchange="CheckEmail(this.value)" size="10" name="">
+                        <span id="emailCheck"></span>
+                    </div>
+                    <div class="hint">
+                        <span>输入邮箱获得验证码</span>
+                    </div>
+                    <div id="stuNumInputLine">
+                        <label class="accAndPass">验证码:</label>
+                        <input class="regFormIpt" style="font-size:25px" title="请输入验证码" type="text" onchange="CheckStuNum(this.value)" size="10" name="" onmouseover="this.value=this.value.replace(/[^0-9]/g,'')" onkeyup="this.value=this.value.replace(/[^0-9]/g,'')" onafterpaste="this.value=code.value.replace(/[^0-9]/g,'')">
+                        <span id="stuNumCheck"></span>
+                    </div>
+                    <div class="hint">
+                        <span>请输入验证码</span>
+                    </div>
+                    <div id="regButton">
+                        <button id="regBtn" class="btn" type="submit" onclick="return verifyAll();" >确定修改</button>
+                    </div>
+                </form>
+            </div>
+        </div>	   
+    </div>
+</body>
+</html>
